@@ -4,11 +4,15 @@ var urlsToCache = [
 	'./nav.html',
 	'./index.html',
 	'./pages/home.html',
-	'./pages/about.html',
-	'./pages/contact.html',
+	'./pages/catalog.html',
+	'./pages/flightcatalog.html',
+	'./pages/hotelcatalog.html',
+	'./pages/testimonial.html',
+	'./pages/registration.html',
 	'./css/materialize.min.css',
 	'./js/materialize.min.js',
-    './js/nav.js'
+	'./js/nav.js',
+	'./js/script.js'
 ];
 
 self.addEventListener('install', function(event){
