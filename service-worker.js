@@ -11,6 +11,7 @@ var urlsToCache = [
 	'./pages/registration.html',
 	'./css/materialize.min.css',
 	'./js/materialize.min.js',
+	'./assets/Logo.png',
 	'./js/nav.js',
 	'./js/script.js'
 ];
