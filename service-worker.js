@@ -1,7 +1,6 @@
-const CACHE_NAME = 'firstpwa';
+const CACHE_NAME = 'hcipwa';
 var urlsToCache = [
 	'./',
-	'./nav.html',
 	'./index.html',
 	'./pages/home.html',
 	'./pages/catalog.html',
@@ -9,10 +8,8 @@ var urlsToCache = [
 	'./pages/hotelcatalog.html',
 	'./pages/testimonial.html',
 	'./pages/registration.html',
-	'./css/materialize.min.css',
-	'./js/materialize.min.js',
+	'./css/style.css',
 	'./assets/Logo.png',
-	'./js/nav.js',
 	'./js/script.js'
 ];
 

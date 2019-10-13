@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="manifest" href="manifest.json">
-
     <meta name="theme-color" content="#00897B"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/css/style.css">
+   
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Trip Seek</title>
 </head>
 <body>
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <a href="#" class="brand-logo" id="logo-container"><img src="/assets/Logo.png" width="50px" height="50px"></a>
-           
-            <a href="#" class="sidenav-trigger" data-target="nav-mobile"><div class="black-text">☰</div></a>
-
-            <ul class="topnav right hide-on-med-and-down"></ul>
-            <ul class="sidenav" id="nav-mobile"></ul>
-        </div>
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="/assets/Logo.png">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Catalog</a>
+            <ul>
+              <li><a href="/pages/hotelcatalog.html">Hotel Catalog</a></li>
+              <li><a href="/pages/flightcatalog.html">Flight Catalog</a></li>
+            </ul>
+          </li>
+          <li><a href="/pages/testimonial.html">Testimonial</a></li>
+          <li><a href="/pages/registration.html">Registration</a></li>
+      </ul>
     </nav>
-    <div class="container" id="body-content"></div>
+    </header>
 
-    <script src="js/materialize.min.js"></script>
-    <script src="js/nav.js"></script>
     <script>
         // REGISTER SERVICE WORKER
         if ('serviceWorker' in navigator) {

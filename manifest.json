@@ -1,14 +1,14 @@
 {
-    "name": "My First PWA",
+    "name": "HCI-PWA",
     "short_name": "My PWA",
-    "description": "Aplikasi PWA pertama saya",
+    "description": "Hci Travel Seek PWA",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#00897B",
     "theme_color": "#00897B",
     "icons": [
         {
-            "src": "icon.png",
+            "src": "/assets/Logo.png",
             "sizes": "512x512",
             "type": "image/png"
         }
