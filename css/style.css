@@ -1,131 +1,136 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-*{
-  padding: 0;
-  margin: 0;
-	list-style: none;
-  text-decoration: none;
-}
 body{
-  font-family: 'Open Sans', sans-serif;
-}
-nav{
-  height: 80px;
-    background: #ffffff;
-    box-shadow: 5px 5px rgb(75, 75, 75,0.5);
-}
-nav img{
-	position: absolute;
-	width: 80px;
-    left: 12%;
-    height: 80px;
-}
-nav ul{
-  float: right;
-  margin-right: 25px;
-  padding: 0;
+  font-family: sans-serif;
   margin: 0;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-nav ul li a{
-  position: relative;
-  padding: 5px 0;
-  color: black;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-nav ul li ul{
-    display: absolute;
-    display: none;
-}
-nav ul li:hover > ul{
-    display: block;
-}
-nav ul ul li{
-    width: 150px;
-    top: 50px;
-    display: block;
-    position: relative;
+  padding: 0;
+  
 }
 
-nav ul li a:before{
-  position: absolute;
-  content: '';
-  bottom: 0;
+header{
+  
+  position: fixed;
+  top: 0;
   left: 0;
+  padding: 0 100px;
+  background: #ffffff;
+  margin-left: 0;
   width: 100%;
-  height: 3px;
-	background: rgb(0, 0, 0);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s linear;
+  box-shadow: 5px 5px black;
+  box-sizing: border-box;
+ 
 }
-nav ul li a:hover:before{
-  transform: scaleX(1);
-  transform-origin: left;
+header .logo{
+  color: #000;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  background-image: url(/assets/Logo.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  float: left;
+  font-weight: bold;
 }
-label #btn,
-label #cancel{
-  font-size: 30px;
-  color: rgb(0, 0, 0);
+header nav{
   float: right;
-  line-height: 80px;
-  margin-right: 40px;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li{
+  list-style: none;
+  position: relative;
+}
+header nav ul li ul
+{
+  position: absolute;
+  left: 0;
+ 
+  background: #fff;
+  border: 1px solid black;
+  display: none;
+}
+
+header nav ul li.active ul
+{
+  display: block;
+} 
+header nav ul li ul li
+{
+  display: block;
+  width: 200px;
+ 
+}
+
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+header nav ul li a:hover
+{
+  color: #000;
+  background: #979797;
+}
+.menu-toggle
+{
+  color: rgb(0, 0, 0);
+  line-height: 50px;
+  float: right;
+  margin-right: 15px;
   cursor: pointer;
+  font-size: 24px;
   display: none;
 }
-#check{
-  display: none;
+main img{
+  width: 250px;
+  height: 250px;
 }
-@media (max-width: 1118px){
-  nav img{
-    left: 8%;
+@media (max-width: 850px)
+{
+  header{
+   padding: 0;
+    
   }
-}
-@media (max-width: 944px){
-  nav img{
-    width: 80px;
-		top: 10px;
-        left: 6%;
-        height: 70px;
-  }
-	nav ul li a{
-        font-size: 17px;
-        color: white;
-	}
-}
-@media (max-width: 860px){
-  label #btn{
+  .menu-toggle{
     display: block;
   }
-  ul{
-    position: fixed;
+  header nav{
+    position: absolute;
     width: 100%;
     height: 100vh;
-    background: #000000;
-    top: 80px;
+    background: #333;
+    top:50px;
     left: -100%;
-    text-align: center;
-    transition: all .5s;
+    transition: 0.5s ease;
   }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  #check:checked ~ ul{
+  header nav.active{
     left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    top:50px;
+    transition: 0.5s ease;
   }
-	#check:checked ~ label #btn{
-    display: none;
-  }
-	#check:checked ~ label #cancel{
+  header nav ul{
     display: block;
+    text-align: center;
   }
+  header nav ul li a{
+    border-bottom: 1px solid rgb(0,0,0);
+  }
+  header nav ul li.active ul{
+    position: relative;
+    background: rgb(196, 196, 196);
+    transition: 0.5s ease;
+  }
+  header nav ul li ul li{
+    width: 100%;
+  }
+
 }
