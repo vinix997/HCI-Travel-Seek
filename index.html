@@ -32,12 +32,50 @@
     </nav>
     <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
+    <!-- Slideshow container -->
     <div class="container">
-      <div class="slideshow">
+	
+      <input type="radio" id="i1" name="images" checked />
+      <input type="radio" id="i2" name="images" />
+      <input type="radio" id="i3" name="images" />
+   	
+      
+      <div class="slide_img" id="one">			
+          
+          <img src="img1.jpg">
+          
+            <label class="prev" for="i3"><span>&#x2039;</span></label>
+            <label class="next" for="i2"><span>&#x203a;</span></label>	
         
       </div>
+      
+      <div class="slide_img" id="two">
+        
+          <img src="img2.jpg" >
+          
+            <label class="prev" for="i1"><span>&#x2039;</span></label>
+            <label class="next" for="i3"><span>&#x203a;</span></label>
+        
+      </div>
+          
+      <div class="slide_img" id="three">
+          <img src="img3.jpg">	
+          
+            <label class="prev" for="i2"><span>&#x2039;</span></label>
+            <label class="next" for="i1"><span>&#x203a;</span></label>
+      </div>
+    
+      <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+       
+      </div>
+        
     </div>
-   <!-- <script>
+    
+    
+  <script>
         // REGISTER SERVICE WORKER
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {
@@ -52,7 +90,7 @@
         } else {
           console.log("ServiceWorker belum didukung browser ini.")
         }
-    </script>-->
+    </script>
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
