@@ -96,6 +96,7 @@
         $(document).ready(function(){
           $('.menu-toggle').click(function(){
             $('nav').toggleClass('active');
+            $('.container').toggleClass('hidden');
           })
           $('ul li').click(function(){
             $(this).siblings().removeClass('active');
