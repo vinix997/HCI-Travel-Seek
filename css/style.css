@@ -4,19 +4,26 @@ body{
   padding: 0;
   
 }
+.menu{
+  margin-left: 650px;
+}
+.main-text{
+  text-align: center;
+}
 .trip-seek-image{
   background-image: url(/template.jpg);
   margin: 0 auto;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   height: 500px;
   width: 100%;
 }
 /* Slideshow container */
 .slideshow-container {
-  margin: 0 auto;
-  margin-top: 100px;
-  overflow: hidden;
-  width: 1200px;
+ 
+  width: 100%;
+  text-align: center;
   
 }
 
@@ -58,12 +65,13 @@ body{
 
 @import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
 
-@media screen and (max-width: 685px){
+@media screen and (max-width: 500px){
   .slideshow-container{
-    width: 300px;
-    margin-left: 75px;
+    
+    margin: 0 auto;
     
   }
+  
   .slider{
     height: 250px;
     width: 100%;
@@ -91,14 +99,11 @@ body{
      background-position: 50% 50%;
      }
    }
-   .trip-seek-image{
-     width: 450px;
-   }
+   
 
 }
-@media screen  and(min-width: 970px){
-	.me{ display: none;}
-}
+
+
 
 
 
@@ -106,10 +111,8 @@ body{
 
 
 header{
-  
+  display: flex;
   position: fixed;
-  top: 0;
-  left: 0;
   padding: 0 100px;
   background: #ffffff;
   margin-left: 0;
@@ -118,25 +121,29 @@ header{
   box-sizing: border-box;
  
 }
-header .logo{
+.logo-container{
+  display: flex;
+  padding: 0; 
+  
+}
+.logo{
   color: #000;
   height: 50px;
-  line-height: 50px;
   font-size: 18px;
   background-image: url(/assets/Logo.png);
   background-size: cover;
   width: 50px;
-  height: 50px;
-  float: left;
   font-weight: bold;
 }
 header .logo-txt{
- 
+  margin-left: 15px;
   font-style: italic;
   font-weight: 550;
   font-size: 14px;
-  padding: 0;
+  width: 250px;
+  
 }
+
 header nav{
   float: right;
 }
@@ -183,71 +190,159 @@ header nav ul li a:hover
   color: #000;
   background: #979797;
 }
+.toggle-container{
+  display: none;
+  width: 100%;
+  justify-content: center;
+  
+}
 .menu-toggle
 {
   color: rgb(0, 0, 0);
   line-height: 50px;
-  float: right;
-  margin-right: 15px;
+  
   cursor: pointer;
   font-size: 24px;
-  display: none;
 }
-
-main img{
-  width: 250px;
+main{
+  height: 100%;
+}
+.main-content{
+  text-align: center;
+}
+.service-container{
+  display: inline-flex;
+  
+  width: 80%;
   height: 250px;
 }
-@media (max-width: 1024px)
-{
-  header{
-   padding: 0;
-    
-  }
- 
-  .menu-toggle{
-    display: block;
-  }
-  header nav{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-   
-    top:50px;
-    left: -100%;
-    transition: 0.5s ease;
-  }
-  header nav.active{
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    
-    top:50px;
-    transition: 0.5s ease;
-  }
-
-  header nav ul{
-    display: block;
-    text-align: center;
-  }
-  header nav ul li a{
-    border-bottom: 1px solid rgb(0,0,0);
-  }
-  header nav ul li.active ul{
-    position: relative;
-    background: rgb(196, 196, 196);
-    transition: 0.5s ease;
-  }
-  header nav ul li ul li{
-    width: 100%;
-  }
-
+.service-1{
   
+  background: url(/airplane.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.service-2{
+  
+  background: url(/hotel.jpg);
+  background-size: cover;
+
+  width: 50%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.seeker-container{
+  display: flex;
+  justify-content: center;
   
 }
+.seeker{
+  background: url(/generic-family-holidays-85255-ws.jpg);
+  background-size: cover;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@media(max-width: 330px)
+{
+  .menu{
+    margin-left: 0;
+    
+  }
+  .menu-toggle{
+    margin-right: 400px;
+    
+  }
+  
+}
+@media(max-width: 780px)
+{
+  .menu{
+    margin-left: 0;
+    
+  }
+  header{
+    padding: 0;
+  }
+}
+
+@media (max-width: 740px)
+{
+  header{
+    padding: 0;
+     
+   }
+   .toggle-container{
+     display: flex;
+     
+   }
+   .menu{
+     margin-left: 0;
+   }
+   header nav{
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #333;
+    
+     top:50px;
+     left: -100%;
+     transition: 0.5s ease;
+   }
+   header nav.active{
+     left: 0;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #333;
+     
+     top:50px;
+     transition: 0.5s ease;
+   }
+ 
+   header nav ul{
+     display: block;
+     text-align: center;
+   }
+   header nav ul li a{
+     border-bottom: 1px solid rgb(0,0,0);
+   }
+   header nav ul li.active ul{
+     position: relative;
+     background: rgb(196, 196, 196);
+     transition: 0.5s ease;
+   }
+   header nav ul li ul li{
+     width: 100%;
+   }
+   .seeker{
+     height: 100px;
+   }
+  
+}
+@media(min-width: 1024px) and (max-width: 1200px)
+{
+  .menu{
+    margin-left: 150px;
+  }
+}
+
+
 footer{
-  margin-left: 15px;
+  background-color: #333;
+}
+
+.contact-container{
+  text-align: right;
+}
+.copyright-text{
+  
+  text-align: center;
 }
