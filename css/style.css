@@ -9,10 +9,12 @@ body{
 }
 .main-text{
   text-align: center;
+  font-size: 30px;
 }
 .trip-seek-image{
   background-image: url(/template.jpg);
   margin: 0 auto;
+  margin-top: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -21,10 +23,8 @@ body{
 }
 /* Slideshow container */
 .slideshow-container {
- 
   width: 100%;
   text-align: center;
-  
 }
 
 .slider{
@@ -35,8 +35,16 @@ body{
   background-size: cover;
   background-position: 50% 50%;
   animation: slide 12s infinite;
-}
   
+}
+.subscribe-container{
+  text-align: center;
+}
+.subscribe-text{
+  font-weight: 550;
+  font-size: 24px;
+}
+
 
 @keyframes slide{
  33%{ background: url(/img2.jpg);
@@ -215,6 +223,7 @@ main{
   
   width: 80%;
   height: 250px;
+  
 }
 .service-1{
   
@@ -340,9 +349,15 @@ footer{
 }
 
 .contact-container{
-  text-align: right;
+  display: inline-flexbox;
+  
+  color: white;
+}
+.info-container{
+  justify-content: right;
+}
+.copyright-container{
+  
 }
 .copyright-text{
-  
-  text-align: center;
 }
