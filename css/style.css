@@ -219,43 +219,44 @@ main{
   text-align: center;
 }
 .service-container{
-  display: inline-flex;
-  
-  width: 80%;
-  height: 250px;
-  
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  grid-template-rows: 50% 50%;
+  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
 }
 .service-1{
   
   background: url(/airplane.jpg);
   background-size: cover;
-  width: 50%;
   height: 250px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .service-2{
-  
+  height: 250px;
   background: url(/hotel.jpg);
   background-size: cover;
 
-  width: 50%;
-  height: 250px;
+  
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .seeker-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
   justify-content: center;
-  
+  grid-auto-columns: minmax(100px, auto);
 }
 .seeker{
   background: url(/generic-family-holidays-85255-ws.jpg);
+  background-color: #000;
   background-size: cover;
-  width: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
+  align-self: center; 
+  
   height: 200px;
+  
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -349,15 +350,21 @@ footer{
 }
 
 .contact-container{
-  display: inline-flexbox;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   color: white;
 }
 .info-container{
-  justify-content: right;
-}
-.copyright-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: right;
   
 }
-.copyright-text{
+.copyright-container{
+  display: grid;
+  justify-content: space-around;
+  
+  
 }
+
