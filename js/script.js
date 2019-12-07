@@ -19,4 +19,22 @@ $(document).ready(function(){
       $(this).siblings().removeClass('active');
       $(this).toggleClass('active');
     })
+    var i = 1;
+    var length = $('.slide').length;
+
+    function animateSlide(){
+        
+        $('.slides').animate({'margin-left': '-=200vh'}, 3000, function() {
+            i++;
+            console.log(i);
+            console.log(length);
+            if(i == length){
+                $('.slides').css(
+                    'margin-left',0
+                )
+                i =1;
+            }
+        })
+    }
+    setInterval(animateSlide, 2000);
   })
