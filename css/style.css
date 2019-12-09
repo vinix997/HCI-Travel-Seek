@@ -5,7 +5,11 @@ body{
   
 }
 .menu{
-  margin-left: 650px;
+  margin-left: 450px;
+}
+.sub-menu-items>input{
+  height: 25px;
+  width: 100%;
 }
 .main-text{
   text-align: center;
@@ -272,7 +276,9 @@ main{
     
   }
   
+  
 }
+
 @media(max-width: 780px)
 {
   .menu{
@@ -292,14 +298,18 @@ main{
      
    }
    .logo-main-container{
-     width: 250px;
-     height: 250px;
      justify-content: center;
-     text-align: center;
+     
+   }
+   .form-container{
+     margin-left: 10px;
+   }
+   .center-text{
+     justify-content: center;
    }
    .logo-main{
-     width: 150px;
-     height: 150px;
+     width: 10vh;
+     height: 10vh;
    }
    .toggle-container{
      display: flex;
@@ -352,10 +362,16 @@ main{
    }
   
 }
+@media(min-width: 768px) and (max-width: 1023px)
+{
+  .menu{
+    margin-left: -140px;
+  }
+}
 @media(min-width: 1024px) and (max-width: 1200px)
 {
   .menu{
-    margin-left: 150px;
+    margin-left: -80px;
   }
 }
 
@@ -365,6 +381,12 @@ main{
     width: 50px;
   }
   
+}
+@media(min-width: 300px) and (max-width: 330px)
+{
+ .form-container{
+   margin-left: 50px;
+ }
 }
 footer{
   background-color: #333;
@@ -387,6 +409,7 @@ footer{
   justify-content: space-around;
 }
 .main-container{
+  
   padding: 100px;
 }
 .form-container
@@ -397,7 +420,6 @@ footer{
 
 }
 .registration-text{
-  text-align: center;
   font-weight: 550;
   font-size: 40px;
   
@@ -409,8 +431,14 @@ footer{
 }
 
 .logo-main-container{
-  display: flex;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.center-text{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .logo-main{
@@ -428,4 +456,16 @@ footer{
 select{
   width: 350px;
   height: 25px;
+}
+.submit-button
+{
+  margin-top: 15px;
+  
+}
+.submit-style
+{
+  background-color: #333;
+  border: none;
+  border: 1px solid black;
+  color: white;
 }
