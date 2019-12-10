@@ -16,31 +16,15 @@ body{
   font-size: 30px;
 }
 .trip-seek-image{
-  background-image: url(/template.jpg);
-  margin: 0 auto;
+  background-image: url(/assets/1.jpg);
+  margin: auto auto;
   margin-top: 50px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 500px;
-  width: 100%;
-}
-/* Slideshow container */
-/* .slideshow-container {
-  width: 100%;
-  text-align: center;
-} */
 
-/* .slider{
-  background-image: url(/img1.jpg);
   height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  animation: slide 12s infinite;
-  
-} */
+  width: auto;
+}
 
 .slider{
   width: 100vw;
@@ -69,59 +53,38 @@ body{
   font-weight: 550;
   font-size: 24px;
 }
-
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css?family=Just+Another+Hand'); */
-
-@media screen and (max-width: 500px){
-  /* .slideshow-container{
-    
-    margin: 0 auto;
-    
-  }
-  */
- 
-  /* @keyframes slide{
-    33%{ background: url(/img2.jpg);
-     width: 100%;
-     
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 50% 50%;
-     }
-    66%{ background: url(/img3.jpg);
-     
-      width: 100%;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 50% 50%;
-     }
-    100%{ background: url(/img1.jpg);
-     
-      width: 100%;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 50% 50%;
-     }
-   }
-    */
-  
-
+.service1{
+  position: relative;
+  width: 100%;
 }
-
-
-
-
-
-
+.service2{
+  position: relative;
+}
+.service-text{
+  background-color: rgba(0, 0, 0, 1);
+  
+  position: absolute;
+  bottom: -90px;
+  right: 16px;
+  color: white;
+}
+.tripseek-container
+{
+  position: relative;
+}
+.tripseek-text{
+  background-color: rgba(0, 0, 0, 1);
+  
+  position: absolute;
+  top: 90%;
+  left: 50%;  
+  color: white;
+  transform: translate(-50%, -50%);
+}
 
 
 header{
   display: flex;
-  position: fixed;
   padding: 0 100px;
   background: #ffffff;
   margin-left: 0;
@@ -229,7 +192,7 @@ main{
 }
 .service-1{
   
-  background: url(/airplane.jpg);
+  background: url(/assets/airplane.jpg);
   background-size: cover;
   height: 250px;
   background-repeat: no-repeat;
@@ -237,7 +200,7 @@ main{
 }
 .service-2{
   height: 250px;
-  background: url(/hotel.jpg);
+  background: url(/assets/hotel.jpg);
   background-size: cover;
 
   
@@ -248,19 +211,20 @@ main{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-content: center;
-  grid-auto-columns: minmax(100px, auto);
+  
 }
 .seeker{
-  background: url(/generic-family-holidays-85255-ws.jpg);
+  
   background-color: #000;
   background-size: cover;
   align-self: center; 
   
   height: 200px;
-  
+  width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 @media(max-width: 330px)
 {
   .menu{
@@ -309,6 +273,9 @@ main{
    }
    .toggle-container{
      display: flex;
+     
+   }
+   .trip-seek-image{
      
    }
    .menu{
