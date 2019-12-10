@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     function animateSlide(){
         
-        $('.slides').animate({'margin-left': '-=100vw'}, 1000, function() {
+        $('.slides').animate({'margin-left': '-=100vw'}, 2500, function() {
             i++;
             if(i == length){
                 $('.slides').css(
