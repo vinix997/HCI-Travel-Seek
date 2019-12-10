@@ -24,10 +24,8 @@ $(document).ready(function(){
 
     function animateSlide(){
         
-        $('.slides').animate({'margin-left': '-=200vh'}, 3000, function() {
+        $('.slides').animate({'margin-left': '-=100vw'}, 1000, function() {
             i++;
-            console.log(i);
-            console.log(length);
             if(i == length){
                 $('.slides').css(
                     'margin-left',0
