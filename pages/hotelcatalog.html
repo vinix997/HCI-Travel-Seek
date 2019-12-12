@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#00897B"/>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/hotelCat.css">
    
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -33,6 +34,36 @@
     </nav>
     <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
+    <main>
+      <div  class="background-hotel">
+        <div class="hotel-content1">
+            FIND THE CONVENIENCE
+        </div>
+        <div class="hotel-content2">
+            City,destination,hotel name
+            <div></div>
+            <input type="text" name="search" id="search">
+        </div>
+        <div class="hotel-content3">
+          <div>Check-in:</div>
+          <div>Check-out:</div>
+          <input type="date" name="check-in" id="check-in">
+          <input type="date" name="check-out" id="check-out">
+          <div>Guests:</div>
+          <div>Rooms:</div>
+          <input type="number" name="guests" id="guests">
+          <input type="number" name="rooms" id="rooms">
+        </div>
+        <div class="hotel-content4">
+          <input type="submit" value="Search Hotel">
+        </div>
+      </div>
+      <div class="cards">
+        <img src="/assets/Cards.jpg" alt="">
+        <div class="hotel-name">St.Moritz</div>
+        <div class="hotel-address"></div>
+      </div>
+    </main>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.menu-toggle').click(function(){
@@ -44,6 +75,7 @@
         })
       })
   </script>
+ 
   
 </body>
 </html>

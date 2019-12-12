@@ -2,7 +2,6 @@ body{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 .trip-seek-image{
   background-image: url(/template.jpg);
@@ -116,7 +115,7 @@ header{
   width: 100%;
   box-shadow: 5px 5px black;
   box-sizing: border-box;
- 
+  z-index: 5;
 }
 header .logo{
   color: #000;
@@ -251,3 +250,5 @@ main img{
 footer{
   margin-left: 15px;
 }
+
+

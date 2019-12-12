@@ -1,0 +1,95 @@
+.background-hotel{
+  padding-top: 55px;
+  height: 500px;
+  background-image: url("/assets/Background.jpg");
+}
+
+.hotel-content1{
+  position: absolute;
+  top: 10%;
+  text-decoration-line: underline;
+  color: white;
+  font-size: 32px;
+  font-style: italic;
+  margin-left: 50px;
+}
+
+.hotel-content2{
+  position: absolute;
+  top: 20%;
+  color:white ;
+  margin-left: 50px;
+}
+
+.hotel-content3{
+  position: absolute;
+  width: 500px;
+  height: auto;
+  float: left;
+  margin-left: 25px;
+  top: 30%;
+  color:white ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-content3 div{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hotel-content3 input{
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+
+.hotel-content4{
+  position: absolute;
+  top: 50%;
+  color:white ;
+  margin-left: 50px;
+}
+
+.hotel-content4 input{
+  width: 100%;
+}
+
+@media screen and (max-width: 500px){
+  .hotel-content1{
+    font-size: 20px;
+  }
+  .hotel-content3{
+    width: 250px;
+  }
+  .hotel-content3 div{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .hotel-content3 input{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 25%;
+  }
+}
+
+.cards{
+  width: 90%;
+  height: 50px;
+  margin: 5%;
+  padding: 0;
+  background-color: white;
+}
+
+.cards img{
+  height: inherit;
+  width: auto;
+  margin: 0px;
+}
+
+body{
+  background-color: silver;
+}
