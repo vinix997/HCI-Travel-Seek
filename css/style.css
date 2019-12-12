@@ -472,9 +472,17 @@ select{
   margin-right: 20vw;
 
 }
+/* What you missed */
 .testi{
   width: 100vw;
   height: 50vh;
+}
+/* Contoh media query */
+@media(max-width: 700px)
+{
+  .testi{
+    height: 30vh;
+  }
 }
 .testi-image2{
   display: flex;
