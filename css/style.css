@@ -432,3 +432,111 @@ select{
   border: 1px solid black;
   color: white;
 }
+
+
+/* CSS by Dicks in the penis*/
+
+.inner-text{
+  color: white;
+  position: absolute;
+  font-size: 150px;
+  width: 100%;
+  top: 200px;
+  left: 40px;
+  right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;  
+}
+
+.testi-image1{
+  margin-top: 50px;
+  margin-left: 30px;
+  width : 533px;
+  height : 370px;
+}
+
+.text1{
+  float: right;
+  margin-right: 750px;
+  font-size: 30px;
+  margin-top: 50px;
+  width: 30%;
+}
+
+.name1{
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+  color: grey;
+}
+
+.testi-image2{
+  margin-top: 60px;
+  margin-left: 1330px;
+  width : 533px;
+  height : 370px;
+}
+
+.text2{
+  float: left;
+  margin-top: -380px;
+  margin-left: 750px;
+  font-size: 30px;
+  width: 30%;
+}
+
+.name2{
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+  color: grey;
+}
+
+.testi-image3{
+  margin-top: 50px;
+  margin-left: 30px;
+  width : 533px;
+  height : 370px;
+}
+
+.text3{
+  float: right;
+  margin-right: 750px;
+  font-size: 30px;
+  margin-top: 50px;
+  width: 30%;
+}
+
+.name3{
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+  color: grey;
+}
+
+.testi-image4{
+  margin-top: 60px;
+  margin-left: 1330px;
+  width : 533px;
+  height : 370px;
+  margin-bottom: 70px;
+}
+
+.text4{
+  float: left;
+  margin-top: -440px;
+  margin-left: 750px;
+  font-size: 30px;
+  width: 30%;
+}
+
+.name4{
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+  color: grey;
+}
