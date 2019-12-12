@@ -435,108 +435,101 @@ select{
 
 
 /* CSS by Dicks in the penis*/
+.testi-container{
+  display:flex;
+}
 
 .inner-text{
+  display: flex;
   color: white;
   position: absolute;
-  font-size: 150px;
+  font-size: 7vw;
   width: 100%;
-  top: 200px;
-  left: 40px;
-  right: 50px;
+  height: 100%;
+  margin-top: 10vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;  
 }
 
 .testi-image1{
-  margin-top: 50px;
-  margin-left: 30px;
-  width : 533px;
-  height : 370px;
+  display: flex;
+  margin-top: 3vw;
+  margin-left: 8vw;
+  width : 40vw;
+  height : 30vw;
 }
 
 .text1{
-  float: right;
-  margin-right: 750px;
-  font-size: 30px;
-  margin-top: 50px;
-  width: 30%;
-}
+  display:flex;
+  position: absolute;
+  font-size: 1.5vw;
+  min-height: 50vh;
+  min-width: 20vh;
+  margin-top: -31vw;
+  margin-left: 50vw;
+  margin-right: 20vw;
 
-.name1{
-  float: right;
-  margin-top: 40px;
-  margin-right: 40px;
-  font-size: 30px;
-  color: grey;
 }
 
 .testi-image2{
-  margin-top: 60px;
-  margin-left: 1330px;
-  width : 533px;
-  height : 370px;
+  display: flex;
+  float: right;
+  margin-right: 5vw;
+  margin-top: 3vw;
+  width : 40vw;
+  height : 30vw;
 }
 
 .text2{
-  float: left;
-  margin-top: -380px;
-  margin-left: 750px;
-  font-size: 30px;
-  width: 30%;
-}
-
-.name2{
-  float: right;
-  margin-top: 40px;
-  margin-right: 40px;
-  font-size: 30px;
-  color: grey;
+  display:flex;
+  position: absolute;
+  font-size: 1.5vw;
+  min-height: 50vh;
+  min-width: 20vh;
+  margin-top: 2vw;
+  margin-left: 10vw;
+  margin-right: 48vw;
+  text-align: right;
 }
 
 .testi-image3{
-  margin-top: 50px;
-  margin-left: 30px;
-  width : 533px;
-  height : 370px;
+  display: flex;
+  margin-top: 35vw;
+  margin-left: 8vw;
+  width : 40vw;
+  height : 30vw;
 }
 
 .text3{
-  float: right;
-  margin-right: 750px;
-  font-size: 30px;
-  margin-top: 50px;
-  width: 30%;
-}
-
-.name3{
-  float: right;
-  margin-top: 40px;
-  margin-right: 40px;
-  font-size: 30px;
-  color: grey;
+  display:flex;
+  position: absolute;
+  font-size: 1.5vw;
+  min-height: 50vh;
+  min-width: 20vh;
+  margin-top: -31vw;
+  margin-left: 50vw;
+  margin-right: 20vw;
 }
 
 .testi-image4{
-  margin-top: 60px;
-  margin-left: 1330px;
-  width : 533px;
-  height : 370px;
-  margin-bottom: 70px;
+  display: flex;
+  margin-left: 55vw;
+  margin-top: 3vw;
+  width : 40vw;
+  height : 30vw;
+  margin-bottom: 5vw;
 }
 
 .text4{
-  float: left;
-  margin-top: -440px;
-  margin-left: 750px;
-  font-size: 30px;
-  width: 30%;
-}
-
-.name4{
-  float: right;
-  margin-top: 40px;
-  margin-right: 40px;
-  font-size: 30px;
-  color: grey;
+  display:flex;
+  position: absolute;
+  font-size: 1.5vw;
+  min-height: 50vh;
+  min-width: 20vh;
+  margin-top: -36vw;
+  margin-left: 10vw;
+  margin-right: 48vw;
+  text-align: right;
 }
