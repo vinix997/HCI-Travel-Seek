@@ -657,11 +657,15 @@ select{
 .contoh-container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  overflow: hidden;
 }
 .items{
   margin-top: 15px;
   width: 50vw;
-  height: 50vh;
+  height: 70vh;
+  margin-left: 15px;
+  
+  
 }
 .items>img{
   background-size: cover;
@@ -671,6 +675,6 @@ select{
 @media(max-width: 780px)
 {
   .items{
-    height: 20vh;
+    height: 30vh;
   }
 }
