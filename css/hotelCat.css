@@ -1,28 +1,33 @@
+
 .background-hotel{
   padding-top: 55px;
-  height: 500px;
-  background-image: url("/assets/Background.jpg");
+  width: 100vw;
+  height: 60vh;
+  background-image: url("/assets/Paris\,\ Eiffel\ Tower.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20%;
 }
 
 .hotel-content1{
-  position: absolute;
-  top: 10%;
+  margin-left: 10%;
   text-decoration-line: underline;
   color: white;
   font-size: 32px;
   font-style: italic;
-  margin-left: 50px;
+  
 }
 
 .hotel-content2{
-  position: absolute;
+  /* position: absolute; */
   top: 20%;
   color:white ;
   margin-left: 50px;
 }
 
 .hotel-content3{
-  position: absolute;
+  /* position: absolute; */
   width: 500px;
   height: auto;
   float: left;
@@ -47,14 +52,14 @@
 }
 
 .hotel-content4{
-  position: absolute;
-  top: 50%;
+  /* position: absolute; */
   color:white ;
+  margin-top: 50px;
   margin-left: 50px;
 }
 
 .hotel-content4 input{
-  width: 100%;
+  width: 150px;
 }
 
 @media screen and (max-width: 500px){
