@@ -49,16 +49,13 @@
   width: 150px;
 }
 
-@media screen and (max-width: 780px){
 
-  
- 
-}
 
 .cards{
   width: 90%;
   height: 100px;
-  margin: 5%;
+  margin: 0 auto;
+  margin-top: 1%;
   background-color: white;
   display: flex;
 }
@@ -172,5 +169,8 @@ body{
   }
   .destination-container{
     margin-left: 10vw;
+  }
+  .hotel-address{
+    font-size: 8px;
   }
 }
