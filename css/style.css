@@ -20,8 +20,8 @@ body{
   margin-top: 50px;
   background-size: cover;
   background-repeat: no-repeat;
-
-  height: 500px;
+  width: 99vw;
+  height: 50vh;
 }
 
 .slider{
@@ -38,11 +38,86 @@ body{
 }
 
 
-.slide>img{
-  text-indent: 100%;
+
+.imageView{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Bali\,\ Kuta\ Beach.jpg");
   background-size: cover;
   width: 100vw;
   height: 50vh;
+}
+.imageView1{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/China\,\ Great\ Wall\ of\ China.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView2{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Dubai\,\ Burj\ Khalifa.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView3{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Hawaii\,\ Honolulu.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView4{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Italy\,\ Pisa\ Tower.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView5{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Japan\,\ Fuji\ Mountain.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView6{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Paris\,\ Eiffel\ Tower.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView7{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/Singapore\,\ Merlion.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.imageView8{
+  display: grid;
+  grid-template-rows: 90% 10%;
+  background: url("/assets/St.\ Louis\,\ Gateaway\ Arc.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
+.image-text{
+  color: white;
+  
+  text-align: right;
+  background: rgb(0, 0, 0,0.5);
+  
 }
 .subscribe-container{
   text-align: center;
@@ -52,28 +127,25 @@ body{
   font-size: 24px;
 }
 .service1{
-  position: relative;
-  width: 100%;
-}
-.service2{
-  position: relative;
+  display: grid;
+  grid-template-rows: 90% 10%;
+  height: 100%;
 }
 .service-text{
-  background-color: rgba(0, 0, 0, 1);
-  
-  position: absolute;
-  bottom: -90px;
-  right: 16px;
+  background-color: rgb(0, 0, 0,1);  
+  text-align: left;
   color: white;
 }
 
 .tripseek-text{
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
   color: white;
 }
 .trip-seek-image{
   display: grid;
-  grid-template-rows: 90% 10%;
+  grid-template-rows: 80% 20%;
+  
 }
 
 header{
@@ -178,9 +250,7 @@ main{
 .service-container{
   display: grid;
   grid-template-columns: 50% 50%;  
-  grid-template-rows: 50% 50%;
   grid-auto-columns: minmax(100px, auto);
-  grid-auto-rows: minmax(100px, auto);
   justify-content: center;
 }
 .service-1{
@@ -200,6 +270,11 @@ main{
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.category-text{
+  text-align: left;
+  color: white;
+  font-size: 50px;
+}
 .seeker-container{
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -210,9 +285,8 @@ main{
   
   background-color: #000;
   background-size: cover;
-  align-self: center; 
   
-  height: 200px;
+  height: 30vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -247,7 +321,36 @@ main{
   .trip-seek-image{
     grid-template-rows: 70% 30%;
   }
-  
+  .imageView{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView1{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView2{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView3{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView4{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView5{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView6{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView7{
+    grid-template-rows: 50% 50%;
+  }
+  .imageView8{
+    grid-template-rows: 50% 50%;
+  }
+  .service1{
+    grid-template-rows: 80% 20%;
+  }
 }
 
 @media (max-width: 740px)
