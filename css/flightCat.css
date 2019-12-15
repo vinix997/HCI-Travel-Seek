@@ -112,7 +112,7 @@
     
     color: white;
     justify-content: left;
-    margin-left: 15vw;
+    margin-left: 30vw;
     
   }
   
@@ -153,32 +153,41 @@
     .flight-container div{
         font-size: 12px;
     }
+    .bottom-flight-content{
+        grid-template-columns: repeat(2,50%);
+        justify-content: center;
+    }
+    .flight-container{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
     .flight-info div{
         font-size: 6px;
     }
     #from{
-      width: 15vw;
+      width: 20vw;
     }
     #to{
-      width: 15vw;
+      width: 20vw;
     }
     #departure{
-      width: 15vw;
+      width: 30vw;
     }
     #return{
-      width: 15vw;
+      width: 30vw;
     }
     #search{
-      width: 15vw;
+      width: 30vw;
     }
     #class{
-      width: 15vw;
+      width: 30vw;
     }
     #numPass{
-      width: 15vw;
+      width: 30vw;
     }
     .destination-container{
-      margin-left: 15vw;
+      margin-left: 30vw;
     }
     .flight-address{
       font-size: 8px;
