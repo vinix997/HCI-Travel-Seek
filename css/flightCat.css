@@ -1,0 +1,180 @@
+
+.background-flight{
+    padding-top: 55px;
+    width: 100vw;
+    height: 60vh;
+    background-image: url("/assets/flightBG.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20%;
+  }
+  
+  .flight-content1{
+    margin-left: 10%;
+    text-decoration-line: underline;
+    color: white;
+    font-size: 32px;
+    font-style: italic;
+    
+  }
+
+  .flight-content4{
+    /* position: absolute; */
+    color:white ;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .flight-content4 input{
+    width: 150px;
+  }
+
+  
+  .cards{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: white;
+    display: flex;
+  }
+  
+  .cards img{
+    height: inherit;
+    width: auto;
+    margin: 0px;
+    float: left;
+  }
+  
+  .flight-info{
+    display: grid;
+    grid-template-columns: repeat(3,20%) ;
+    grid-template-rows: repeat(3,20%);
+    float: none;
+    width: 75%;
+  }
+  
+  .flight-name{
+    font-size: 16px;
+  }
+  
+  .flight-address{
+    font-size: 12px;
+  }
+  
+  .flight-stars{
+    font-size: 30px;
+    color: yellow;
+  }
+  
+  .flight-selection{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    width: auto;
+  }
+  
+  .flight-submit{
+    border-block-color:inherit;
+    color: black;
+    background-color: yellow;
+  }
+  
+  body{
+    background-color: silver;
+  }
+  .flight-content2{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    color:white ;
+    margin-left: 50px;
+  }
+  .flight-content{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 50%;
+    justify-content: center;
+  }
+  .bottom-flight-content{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    width: 100%;
+    justify-content: center;
+  }
+  .flight-container{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    color: white;
+    justify-content: center;
+  }
+  .destination-container{
+    
+    color: white;
+    justify-content: left;
+    margin-left: 15vw;
+    
+  }
+  
+  .submit-style{
+    color: black;
+    background-color: yellow;
+  }
+  
+  #from{
+    width: 20vw;
+  }
+  #to{
+    width: 20vw;
+  }
+  #departure{
+    width: 20vw;
+  }
+  #return{
+    width: 20vw;
+  }
+  #search{
+    width: 20vw;
+  }
+  #class{
+    width: 20vw;
+  }
+  #numPass{
+    width: 20vw;
+  }
+  @media(max-width: 780px)
+  {
+    .flight-container div{
+        font-size: 12px;
+    }
+    .flight-info div{
+        font-size: 6px;
+    }
+    #from{
+      width: 15vw;
+    }
+    #to{
+      width: 15vw;
+    }
+    #departure{
+      width: 15vw;
+    }
+    #return{
+      width: 15vw;
+    }
+    #search{
+      width: 15vw;
+    }
+    #class{
+      width: 15vw;
+    }
+    #numPass{
+      width: 15vw;
+    }
+    .destination-container{
+      margin-left: 15vw;
+    }
+    .flight-address{
+      font-size: 8px;
+    }
+  }

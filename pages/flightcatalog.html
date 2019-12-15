@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#00897B"/>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/flightCat.css">
    
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -15,27 +16,156 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo-container">
+          <div class="logo"></div>
+          <span class="logo-txt">Travelling<br> needs<br> in one place</span>
+        </div>
       <nav>
-    
-        <ul class="menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="#">Catalog</a>
-            <ul class="sub-menu">
-              <li class="sub-menu-items"><a href="/pages/hotelcatalog.html">Hotel Catalog</a></li>
-              <li class="sub-menu-items"><a href="/pages/flightcatalog.html">Flight Catalog</a></li>
-            </ul>
-            
-          </li>
-          <li><a href="/pages/testimonial.html">Testimonial</a></li>
-          <li><a href="/pages/registration.html">Registration</a></li>
-          <li><a href="/pages/login.html">Sign In</a></li>
+
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Catalog</a>
+          <ul class="sub-menu">
+            <li class="sub-menu-items"><a href="/pages/hotelcatalog.html">Hotel Catalog</a></li>
+            <li class="sub-menu-items"><a href="/pages/flightcatalog.html">Flight Catalog</a></li>
+          </ul>
+
+        </li>
+        <li><a href="/pages/testimonial.html">Testimonial</a></li>
+        <li><a href="/pages/registration.html">Registration</a></li>
+        <li><a href="/pages/login.html">Sign In</a></li>
       </ul>
     </nav>
     <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
 
     <main>
+        <div class="flight-main">
+            <div class="background-flight">
+              <div class="flight-content1">
+                FIND CHEAP TICKETS
+              </div>
+              <div class="flight-content">
+                <div class="flight-container">
+                    <div>
+                    <input type="radio" name="ticket-type" id="ticket-type">
+                    One-Way</div>
+                </div>
+                <div class="flight-container">
+                    <div>
+                    <input type="radio" name="ticket-type" id="ticket-type">
+                    Multi-City</div>
+                </div>
+                <div class="flight-container">
+                  <div>From:</div>
+                  <input type="text" name="from" id="from">
+                </div>
+                <div class="flight-container">
+                  <div>To:</div>
+                  <input type="text" name="to" id="to">
+                </div>
+              </div>
+              <div></div>
+              <div class="bottom-flight-content">
+                <div class="flight-container">
+                  <div>Departure:</div>
+                  <input type="date" name="departure" id="departure">
+                </div>
+                <div class="flight-container">
+                  <div>Return:</div>
+                  <input type="date" name="return" id="return">
+                </div>
+                <div class="flight-container">
+                  <div>No. of Passenger:</div>
+                  <input type="number" name="numPass" id="numPass">
+                </div>
+                <div class="flight-container">
+                  <div>Seat Class:</div>
+                  <input type="text" name="class" id="class">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="flight-container">
+                  <div></div>
+                  <input class="submit-style" type="submit" value="Search flight">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="cards">
+            <img src="/assets/Lion.png" alt="">
+            <div class="flight-info">
+              <div class="flight-name">Lion Air</div>
+              <div></div>
+              <div></div>
+              <div>06.30</div>
+              <div>✈️✈️✈️</div>
+              <div>06.30</div>
+              <div>Jakarta(CGV)</div>
+              <div></div>
+              <div>Los Angeles(CA)</div>
+            </div>
+            <div class="flight-selection">
+              1$/pax
+              <input class="flight-submit" type="submit" value="Select">
+            </div>
+          </div>
+          <div class="cards">
+            <img src="/assets/Lion.png" alt="">
+            <div class="flight-info">
+              <div class="flight-name">Lion Air</div>
+              <div></div>
+              <div></div>
+              <div>06.30</div>
+              <div>✈️✈️✈️</div>
+              <div>06.30</div>
+              <div>Jakarta(CGV)</div>
+              <div></div>
+              <div>Los Angeles(CA)</div>
+            </div>
+            <div class="flight-selection">
+              1$/pax
+              <input class="flight-submit" type="submit" value="Select">
+            </div>
+          </div>
+          <div class="cards">
+            <img src="/assets/Lion.png" alt="">
+            <div class="flight-info">
+              <div class="flight-name">Lion Air</div>
+              <div></div>
+              <div></div>
+              <div>06.30</div>
+              <div>✈️✈️✈️</div>
+              <div>06.30</div>
+              <div>Jakarta(CGV)</div>
+              <div></div>
+              <div>Los Angeles(CA)</div>
+            </div>
+            <div class="flight-selection">
+              1$/pax
+              <input class="flight-submit" type="submit" value="Select">
+            </div>
+          </div>
+          <div class="cards">
+            <img src="/assets/Lion.png" alt="">
+            <div class="flight-info">
+              <div class="flight-name">Lion Air</div>
+              <div></div>
+              <div></div>
+              <div>06.30</div>
+              <div>✈️✈️✈️</div>
+              <div>06.30</div>
+              <div>Jakarta(CGV)</div>
+              <div></div>
+              <div>Los Angeles(CA)</div>
+            </div>
+            <div class="flight-selection">
+              1$/pax
+              <input class="flight-submit" type="submit" value="Select">
+            </div>
+          </div>
       <!-- Yosua's Job -->
     </main>
     <footer>
