@@ -2,7 +2,7 @@
 .background-flight{
     padding-top: 55px;
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     background-image: url("/assets/flightBG.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -144,6 +144,12 @@
   }
   @media(max-width: 780px)
   {
+    .background-flight{
+      height: 40vh;
+    }
+    .flight-content1{
+      font-size: 24px;
+    }
     .flight-container div{
         font-size: 12px;
     }
@@ -176,5 +182,11 @@
     }
     .flight-address{
       font-size: 8px;
+    }
+  }
+  @media(max-width: 500px)
+  {
+    .background-flight{
+      height: 30vh;
     }
   }
