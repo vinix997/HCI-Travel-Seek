@@ -84,7 +84,7 @@
 
 .hotel-stars{
   font-size: 30px;
-  color: yellow;
+  color: rgb(255, 172, 46);
 }
 
 .hotel-selection{
@@ -95,9 +95,10 @@
 }
 
 .hotel-submit{
-  border-block-color:inherit;
+  border-radius: 5px 5px 5px 5px;
   color: black;
-  background-color: yellow;
+  background-color: orange;
+  border: 1px solid black;
 }
 
 body{
@@ -132,7 +133,9 @@ body{
 
 .submit-style{
   color: black;
-  background-color: yellow;
+  background-color: orange;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid black;
 }
 
 #check-in{
