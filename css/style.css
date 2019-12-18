@@ -366,10 +366,7 @@ main{
    .center-text{
      justify-content: center;
    }
-   .logo-main{
-     width: 10vh;
-     height: 10vh;
-   }
+   
    .toggle-container{
      display: flex;
      
@@ -478,27 +475,30 @@ footer{
 .form-container
 {
   display: flex;
-  
+  height: 80vh;
   justify-content: center;
 
 }
 .registration-text{
   font-weight: 550;
   font-size: 40px;
-  margin-left:5vw;
+  text-align: center;
 }
 
 .login-text{
   font-weight: 550;
   font-size: 40px;
-  margin-left:11vw;
+  text-align: center;
 }
 
 .textfield{
   width: 350px;
-  height: 10%;
+  height: 20px;
 }
-
+.textfield:focus{
+  outline: none;
+  border: 3px solid #555;
+}
 .logo-main-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -536,8 +536,13 @@ select{
 {
   background-color: #333;
   border: none;
+  border-radius: 5px 5px 5px 5px;
   border: 1px solid black;
   color: white;
+}
+.submit-style:hover{
+  background-color: rgba(0, 0, 0, 0.623);
+  
 }
 
 
@@ -818,5 +823,13 @@ select{
     background-size: cover;
     width: 48vw;
     height: 45vw;
+  }
+}
+
+@media(max-width: 780px)
+{
+  .logo-main{
+    width: 180px;
+    height: 180px;
   }
 }

@@ -8,7 +8,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
    
-    <script src="js/script.js"></script>
+    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Document</title>
@@ -54,20 +54,26 @@
         <div></div>
       </div>
     <div class="form-container">
-    <form>
+    <form method="GET">
         <div>Full name:</div>
-        <input class="textfield" type="text">
+        <input class="textfield" type="text" name="name" id="name">
         <div>Email:</div>
-        <input type="email" class="textfield">
+        <input type="text" class="textfield" name="email" id="email">
         <div>Password:</div>
-        <input type="password" class="textfield">
+        <input type="password" class="textfield" name="password" id="password">
         <div>Confirm Password:</div>
-        <input type="password" class="textfield">
+        <input type="password" class="textfield" name="password" id="confirm">
         <div>Phone Number:</div>
-        <input type="tel" class="textfield">
+        <input type="tel" class="textfield" name="num" id="num">
+        <div>Gender:</div>
+        <select id="dropdown" name="gender">
+          <option value="">-- select one --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          </select>
         <div>Nationality:</div>
         <div class="custom-select">
-        <select name="nationality" >
+        <select id="nationality" name="nationality" >
             <option value="">-- select one --</option>
             <option value="afghan">Afghan</option>
             <option value="albanian">Albanian</option>
@@ -264,11 +270,10 @@
           </select>
         </div>
           <div>Address:</div>
-          <input type="text" class="textfield">
+          <input id='address' type="text" class="textfield">
           <div class="submit-button">
-            <input class="submit-style" type="submit">
+            <input class="submit-style" type="submit" id="btn">
           </div>
-        
     </form>
     </div>
     </main>
@@ -304,5 +309,7 @@
         })
       })
   </script>
+  <script src="js/script.js"></script>
+  <script src="/js/register.js"></script>
 </body>
 </html>
