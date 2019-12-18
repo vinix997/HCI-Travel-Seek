@@ -76,14 +76,16 @@
   }
   
   .flight-submit{
-    border-block-color:inherit;
+    border-block-color: inherit;
     color: black;
+    margin-left: 1px;
     background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
   }
   
-  body{
-    background-color: silver;
-  }
+  
   .flight-content2{
     display: grid;
     grid-template-columns: repeat(2,50%);
@@ -98,15 +100,15 @@
   }
   .bottom-flight-content{
     display: grid;
-    grid-template-columns: repeat(4,25%);
     width: 100%;
+    grid-template-columns: repeat(2,50%);
     justify-content: center;
   }
   .flight-container{
     display: grid;
     grid-template-rows: repeat(2,1fr);
     color: white;
-    justify-content: center;
+    justify-items: center;
   }
   .destination-container{
     
@@ -119,8 +121,14 @@
   .submit-style{
     color: black;
     background-color: yellow;
+    outline: none;
   }
-  
+  .submit-style:hover{
+    background-color: orange;
+  }
+  .flight-submit:hover{
+    background-color: orange;
+  }
   #from{
     width: 20vw;
   }
@@ -128,49 +136,30 @@
     width: 20vw;
   }
   #departure{
-    width: 20vw;
+    width: 30vw;
   }
   #return{
-    width: 20vw;
+    width: 30vw;
   }
   #search{
-    width: 20vw;
+    width: 30vw;
   }
   #class{
-    width: 20vw;
+    width: 30vw;
   }
   #numPass{
-    width: 20vw;
+    width: 30vw;
   }
   @media(max-width: 780px)
   {
+   
     .flight-container div{
         font-size: 12px;
     }
     .flight-info div{
         font-size: 6px;
     }
-    #from{
-      width: 15vw;
-    }
-    #to{
-      width: 15vw;
-    }
-    #departure{
-      width: 15vw;
-    }
-    #return{
-      width: 15vw;
-    }
-    #search{
-      width: 15vw;
-    }
-    #class{
-      width: 15vw;
-    }
-    #numPass{
-      width: 15vw;
-    }
+    
     .destination-container{
       margin-left: 15vw;
     }

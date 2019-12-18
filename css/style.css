@@ -2,6 +2,7 @@ body{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(196, 196, 196);
 }
 .menu{
   margin-left: 450px;
@@ -17,15 +18,15 @@ body{
 }
 .trip-seek-image{
   background-image: url(/assets/1.jpg);
-  margin-top: 50px;
+  margin-top: 5%;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 99vw;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .slider{
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
   overflow: hidden;
 }
@@ -35,7 +36,8 @@ body{
   margin: 0;
   list-style: none;
   padding-left: 0;
-  width: 99vw;
+  width: 100vw;
+  height: 50vh;
 }
 
 
@@ -45,7 +47,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Bali\,\ Kuta\ Beach.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView1{
@@ -53,7 +55,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/China\,\ Great\ Wall\ of\ China.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView2{
@@ -61,7 +63,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Dubai\,\ Burj\ Khalifa.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView3{
@@ -69,7 +71,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Hawaii\,\ Honolulu.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView4{
@@ -77,7 +79,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Italy\,\ Pisa\ Tower.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView5{
@@ -85,7 +87,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Japan\,\ Fuji\ Mountain.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView6{
@@ -93,7 +95,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Paris\,\ Eiffel\ Tower.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView7{
@@ -101,7 +103,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/Singapore\,\ Merlion.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 .imageView8{
@@ -109,7 +111,7 @@ body{
   grid-template-rows: 90% 10%;
   background: url("/assets/St.\ Louis\,\ Gateaway\ Arc.jpg");
   background-size: cover;
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
 }
 
@@ -149,11 +151,11 @@ body{
 
 header{
   display: flex;
+    
   padding: 0 100px;
   background: #ffffff;
   margin-left: 0;
-  width: 100%;
-  box-shadow: 5px 5px black;
+  width: 100vw;
   box-sizing: border-box;
   z-index: 5;
 }
@@ -350,7 +352,7 @@ main{
   }
 }
 
-@media (max-width: 740px)
+@media (max-width: 780px)
 {
   header{
     padding: 0;
@@ -372,7 +374,7 @@ main{
      
    }
    .trip-seek-image{
-     width: 99vw;
+     width: 100vw;
      height: 30vh;
    }
    .menu{
@@ -577,8 +579,8 @@ select{
 
 }
 .testi{
-  width: 99vw;
-  height: 50vh;
+  width: 100vw;
+  height: 60vh;
 }
 @media(min-width : 360px) and (max-height: 896px){
   .testi-image2{
@@ -800,8 +802,8 @@ select{
 @media(max-width: 1024px)
 {
   .testi{
-    width: 99vw;
-    height: 40vw;
+    width: 100vw;
+    height: 50vw;
   }
 
   .items{
@@ -832,4 +834,9 @@ select{
     width: 180px;
     height: 180px;
   }
+}
+.card-header{
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
 }
