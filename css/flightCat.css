@@ -49,8 +49,8 @@
   
   .flight-info{
     display: grid;
-    grid-template-columns: repeat(3,20%) ;
-    grid-template-rows: repeat(3,20%);
+    grid-template-columns: repeat(3,33%) ;
+    grid-template-rows: repeat(3,33%);
     float: none;
     width: 75%;
   }
@@ -118,12 +118,12 @@
     
   }
   
-  .submit-style{
+  .submit-flight{
     color: black;
     background-color: yellow;
     outline: none;
   }
-  .submit-style:hover{
+  .submit-flight:hover{
     background-color: orange;
   }
   .flight-submit:hover{
@@ -157,7 +157,7 @@
         font-size: 12px;
     }
     .flight-info div{
-        font-size: 6px;
+        font-size: 8px;
     }
     
     .destination-container{

@@ -97,8 +97,12 @@
 .hotel-submit{
   border-radius: 5px 5px 5px 5px;
   color: black;
-  background-color: orange;
+  outline: none;
+  background-color: yellow;
   border: 1px solid black;
+}
+.hotel-submit:hover{
+  background-color: orange;
 }
 
 body{
@@ -131,13 +135,16 @@ body{
   
 }
 
-.submit-style{
+.submit-hotel{
   color: black;
-  background-color: orange;
+  background-color: yellow;
   border-radius: 5px 5px 5px 5px;
   border: 1px solid black;
+  outline: none;
 }
-
+.submit-hotel:hover{
+  background-color: orange;
+}
 #check-in{
   width: 20vw;
 }
