@@ -47,7 +47,7 @@ function validate()
     {
         return alert('Password unmatch');
     }
-    
+  
     let num = ($('#num')).val()
     if(num ==='')
     return alert('Please fill the phone number')
@@ -57,6 +57,11 @@ function validate()
     if(nationality === '') return alert('Please select your nationality')
     let address = $('#address').val();
     if(address < 5)  return alert('Invalid address')
+    if (!$('#agreed').is(":checked"))
+    {
+        return alert('You need to agree to our Terms of Service and Privacy Policy')
+    }
+
     return alert('Registered Successful')
 }
 $('#btn').click(function(e)
